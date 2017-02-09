@@ -29,6 +29,6 @@
 1. Is the code cleanly implemented?
 1. We assume the project will not be completed entirely: Does the final report give a good summary on what work is remaining, how to solve it, and how much time it will take?
 1. Is the code easy to install?
-1. Is the code efficient? (Does it make inappropriate use of system resources, like consuming too much ram?)
+1. Is the code efficient? (Does it make inappropriate use of system resources, like consuming far too much ram?)
 1. Does the project code follow a consistent style? (It could look like https://github.com/bbatsov/ruby-style-guide, but not required)
 1. Are the SCM commits small and with good comments?
