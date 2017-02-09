@@ -7,7 +7,7 @@
 * (Don't copy code code from this code base)
 
 ## Instructions
-* Create a Ruby project with a public gitub repo
+* Create a Ruby project with a private gitub repo (use Bitbucket or any free git provider)
 * Use any libraries, frameworks or gems that you want
 * Pull the data from LR api on server: http://node01.public.learningregistry.net/
 * Normalize it as best you can into a relational structure
