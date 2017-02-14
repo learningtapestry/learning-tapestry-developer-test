@@ -3,7 +3,9 @@
 * This test is a form of https://en.wikipedia.org/wiki/Kobayashi_Maru scenario
 
 ## References
-* Refer to: https://github.com/learningtapestry/learning-registry-ruby-tools/tree/master/extractor
+* Refer to: 
+  * https://github.com/learningtapestry/learning-registry-ruby-tools/tree/master/extractor
+  * http://www.learningregistry.org (don't spend too much time understanding LR - it's a big, open source project)
 * (Don't copy code code from this code base)
 
 ## Instructions
