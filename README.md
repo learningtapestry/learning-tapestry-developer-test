@@ -28,7 +28,7 @@
 1. Is there an end-to-end architecture in place that clearly describes a solution that could work?
 1. Does the implemented code work? (It only needs to work on a developer's workstation)
 1. Does the code have tests?
-1. Is the code cleanly implemented?
+1. Is the code cleanly implemented? Is the overall project well-organized and orderly?
 1. We assume the project will not be completed entirely: Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
 1. Is the code easy to install?
 1. Is the code efficient? (Does it make inappropriate use of system resources, like consuming far too much ram?)
