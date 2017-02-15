@@ -1,15 +1,17 @@
-# Learning Registry Ruby Test
+# Learning Registry Developer Test
 * A test project to assess a software developer's skills
 * This test is a form of https://en.wikipedia.org/wiki/Kobayashi_Maru scenario
 
 ## References
 * Refer to: 
   * https://github.com/learningtapestry/learning-registry-ruby-tools/tree/master/extractor
+    * Example of how to extract data from LR
+    * (Don't copy code code from this code base)
   * http://www.learningregistry.org (don't spend too much time understanding LR - it's a big, open source project)
-* (Don't copy code code from this code base)
 
 ## Instructions
-* Create a Ruby project with a private git repo (feel free to use Bitbucket or any free git provider)
+* Generate agreement with us about what languages, databases and frameworks you will use for this project.
+* Create an appropriate project with a private git repo (feel free to use Bitbucket or any free git provider)
 * Use any libraries, frameworks or gems that you want
 * Pull the data from LR api on server (approx 1000 records): http://node01.public.learningregistry.net/
 * Normalize it as best you can into a relational structure
@@ -34,5 +36,5 @@
 1. We assume the project will not be completed entirely: Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
 1. Is the code easy to install?
 1. Is the code efficient? (Does it make inappropriate use of system resources, like consuming far too much ram?)
-1. Does the project code follow a consistent style? (It should look mostly like https://github.com/bbatsov/ruby-style-guide, but perfection is not expected)
+1. Does the project code follow a consistent style? (If in Ruby, it should look mostly like https://github.com/bbatsov/ruby-style-guide, but perfection is not expected. Other languages should follow similar standard convention standards.)
 1. Are the git commits small and with good comments?
