@@ -21,7 +21,7 @@
 * Provide some basic documentation on how to use your project
 * Limit your effort to no more than 8 hours total
 * Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
-* Send us your repo via private access online, [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html), or tar/gz file (we prefer a method that lets us see commit history).
+* Send us your repo (preferably via [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html))
 
 ## Notes
 * We believe it is impossible to finish this job completely in 8 hours. Try to get a basic end-to-end prototype solution working. Do the best you can - your effort and approach are being tested.
