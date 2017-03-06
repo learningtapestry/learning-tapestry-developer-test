@@ -14,7 +14,9 @@
 * Create an appropriate project with a private git repo (feel free to use Bitbucket or any free git provider)
 * Use any libraries, frameworks or gems that you want
 * Pull the data from LR api on server (approx 1000 records): http://node01.public.learningregistry.net/
+  * Please include your code that downloads and processes the data from LR APIs in your project. Include instructions for operating that part of your solution as well.
 * Normalize it as best you can into a relational structure
+  * Note we would like you to de-serialize the `resource_data` field, which contains UTF-8 strings that have xml and json data. You can skip some records that are poorly formed, but try to process as high a percentage of `resource_data` as you can. Note that the xml and json data will have a variety of schema, which may also prove challenging. Perfection in this task is not expected, but a good effort is.
 * Put it into a structured postgres database (not json fields)
 * Expose the data via an api or html user interface
 * Include a test harness and some tests
