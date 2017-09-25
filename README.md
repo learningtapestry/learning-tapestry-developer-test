@@ -2,6 +2,12 @@
 
 This is a test project to assess a software developer's skills. This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru).
 
+## Tips for passing this test
+
+- Read this README carefully and come up with a plan to finish it as best as you can. 
+- Use simple frameworks instead of complicated ones.
+- Ask us if you're unsure about something.
+
 ## References
 
 Refer to:
