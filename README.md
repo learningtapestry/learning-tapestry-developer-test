@@ -18,6 +18,7 @@ Refer to:
 ### Ruby specific notes
 
 - Do not use Rails. Any other libraries are allowed.
+- Write tests with minitest or RSpec.
 
 ## Instructions
 
