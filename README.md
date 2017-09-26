@@ -75,6 +75,10 @@ Refer to:
 3. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
 4. Is the code efficient? Does it make inappropriate use of system resources, like consuming far too much ram?
 5. We assume the project will not be completed entirely. Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
-6. Does the project code follow [bbatsov's style guide](https://github.com/bbatsov/ruby-style-guide)?
+6. Does the project code follow a consistent style? 
 7. Are the git commits small and with good comments?
 8. Is the code easy to install?
+
+### Ruby specific notes
+
+- We suggest following [bbatsov's style guide](https://github.com/bbatsov/ruby-style-guide)
