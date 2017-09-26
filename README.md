@@ -70,6 +70,7 @@ Refer to:
 
 ## Evaluation Criteria (in order of importance)
 
+0. Does the final result show that the instructions and guidelines above were followed?
 1. Is there an end-to-end architecture in place that clearly describes a solution that works?
 2. Does the code have tests?
 3. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
