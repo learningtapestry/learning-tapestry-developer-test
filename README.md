@@ -7,6 +7,7 @@ This is a test project to assess a software developer's skills. This test is a f
 - Read this README carefully and come up with a plan to finish it as best as you can. 
 - Use simple frameworks instead of complicated ones.
 - Ask us if you're unsure about something.
+- Don't submit your project without tests. You probably won't have time to test everything, so choose what to test.
 
 ## References
 
