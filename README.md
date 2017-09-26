@@ -42,7 +42,7 @@ Refer to:
 
     - The API should have two methods:
         - /resources: Resource browser with pagination
-        - /resources_by_identity: Aggregates resources by identity name. Allows an `?identity=` parameter that filters out identities by name. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to do the aggregation in SQL.
+        - /resources_by_identity: Aggregates resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to do the aggregation in SQL.
 
 - [ ] 5) Write a piece of code that queries your API and displays the returned data.
 
