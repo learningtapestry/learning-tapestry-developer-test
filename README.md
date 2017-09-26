@@ -7,7 +7,7 @@ This is a test project to assess a software developer's skills. This test is a f
 - Read this README carefully and come up with a plan to finish it as best as you can. 
 - Use simple frameworks instead of complicated ones.
 - Ask us if you're unsure about something.
-- Don't submit your project without tests. You probably won't have time to test everything, so choose what to test.
+- Don't submit your project without tests. You won't have time to test everything, so choose what to test.
 
 ## References
 
@@ -29,9 +29,9 @@ Refer to:
 
 ## Instructions
 
-- [ ] 1) Pull the data from the [LR API](http://node01.public.learningregistry.net/) (3000 records are enough). Please include the code for that in your project, as well as instructions for operating that part of your solution. This part of the app should be written in the same language as the rest of the app.
+- [ ] 1) Pull the data from the [LR API](http://node01.public.learningregistry.net/) (3000 records are enough).
 
-    - The code that does this should be configurable and repeatable.
+    - The code that does this is a part of your app as well and written in the same language. It should be configurable and repeatable, and it's a good idea to write tests for it.
 
 - [ ] 2) Normalize the data as best you can into a relational structure.
 
