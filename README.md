@@ -33,29 +33,27 @@ Refer to:
 
     - The code that does this is a part of your app as well and written in the same language. It should be configurable and repeatable, and it's a good idea to write tests for it.
 
-- [ ] 2) Normalize the data as best you can into a relational structure.
+- [ ] 2) Normalize the data as best you can into a relational structure and store the data into a PostgreSQL database.
 
     - Bonus points for deserializing the `resource_data` field, which contains UTF-8 strings that have XML or JSON data.
 
-- [ ] 3) Store the data into a structured PostgreSQL database.
-
-- [ ] 4) Expose the data via an API.
+- [ ] 3) Expose the data via an API.
 
     - The API should have two methods:
         - /resources: Resource browser with pagination
-        - /resources_by_identity: Aggregates resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to do the aggregation in SQL.
+        - /resources_by_identity: __Aggregates__ resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to do the aggregation in SQL.
 
-- [ ] 5) Write a piece of code that queries your API and displays the returned data.
+- [ ] 4) Write a piece of code that queries your API and displays the returned data.
 
-- [ ] 6) Write tests.
+- [ ] 5) Write tests.
 
-- [ ] 7) Provide some basic documentation on how to use your project.
+- [ ] 6) Provide some basic documentation on how to use your project.
 
-- [ ] 8) Limit your effort to no more than 8 hours total.
+- [ ] 7) Limit your effort to no more than 8 hours total.
 
-- [ ] 9) Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
+- [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
 
-- [ ] 10) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
+- [ ] 9) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
 
 ### Ruby specific notes
 
