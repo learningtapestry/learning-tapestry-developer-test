@@ -34,9 +34,7 @@ Refer to:
 
 - [ ] 2) Normalize the data as best you can into a relational structure.
 
-    - We would like you to deserialize the `resource_data` field, which contains UTF-8 strings that have XML or JSON data. You can skip some records that are poorly formed, but try to process as high a percentage of `resource_data` as you can.
-
-    - The XML and JSON data will have a variety of schema, which may also prove challenging. Perfection in this task is not expected, but a good effort is. By "good effort" we mean that you might find some similar fields that you can process from many records, and you might drop some data that doesn't seem important or common from many of the records.
+    - Bonus points for deserializing the `resource_data` field, which contains UTF-8 strings that have XML or JSON data.
 
 - [ ] 3) Store the data into a structured PostgreSQL database.
 
