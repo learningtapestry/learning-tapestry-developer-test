@@ -25,6 +25,7 @@ Refer to:
 ### Ruby specific notes
 
 - Do not use Rails. Any other libraries are allowed.
+  - Note: The reason we ask you not to use Rails is because we want to see how you write software in this test. We use Rails regularly in our professional work, and expect you will use it here if you're a Ruby engineer. But in terms of seeing what kind of programmer you are, Rails tends to obscure certain skills that we would like to see you apply.
 - Write tests with minitest or RSpec.
 
 ## Instructions
