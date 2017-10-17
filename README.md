@@ -17,14 +17,14 @@ Refer to:
 
 ## Requirements
 
-- You must use a minimal framework for the web aspect of the project.
+- You must use a minimal framework for the web aspect of the project. In other words, no kitcken-sink frameworks like Django or Rails, though individual components of those frameworks are OK.
 - You must write tests.
 - You must follow the instructions closely.
 - You must version your code with git.
 
 ### Ruby specific notes
 
-- Do not use Rails. Any other libraries are allowed.
+- Do not use Rails. Any other libraries are allowed (ORMs are okay).
   - Note: The reason we ask you not to use Rails is because we want to see how you write software in this test. We use Rails regularly in our professional work, and expect you will use it here if you're a Ruby engineer. But in terms of seeing what kind of programmer you are, Rails tends to obscure certain skills that we would like to see you apply.
 - Write tests with minitest or RSpec.
 
