@@ -41,8 +41,13 @@ Refer to:
 - [ ] 3) Expose the data via an API.
 
     - The API should have two methods:
-        - /resources: Resource browser with pagination
-        - /resources_by_identity: __Aggregates__ resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to do the aggregation in SQL.
+        - `/resources`: Resource browser with pagination
+        - `/resources_by_identity`: groups resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to use SQL as far as possible for this method.
+          
+          Example output:
+          ```
+          [{ "identity": "John Doe", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
+          ```
 
 - [ ] 4) Write a piece of code that queries your API and displays the returned data.
 
