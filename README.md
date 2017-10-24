@@ -49,7 +49,7 @@ Refer to:
           [{ "identity": "John Doe", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
           ```
 
-- [ ] 4) Write a piece of code that queries your API and displays the returned data.
+- [ ] 4) Write a piece of code - an API client - that consumes your API and displays the returned data.
 
 - [ ] 5) Write tests.
 
