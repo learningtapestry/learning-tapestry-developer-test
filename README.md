@@ -4,7 +4,7 @@ This is a test project to assess a software developer's skills. This test is a f
 
 ## Tips for passing this test
 
-- Read this README carefully and come up with a plan to finish it as best as you can. 
+- Read this README carefully and come up with a plan to finish it as best as you can.
 - Use simple frameworks instead of complicated ones.
 - Ask us if you're unsure about something.
 - Don't submit your project without tests. You won't have time to test everything, so choose what to test.
@@ -43,7 +43,7 @@ Refer to:
     - The API should have two methods:
         - `/resources`: Resource browser with pagination
         - `/resources_by_identity`: groups resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to use SQL as far as possible for this method.
-          
+
           Example output:
           ```
           [{ "identity": "John Doe", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
@@ -69,17 +69,17 @@ Refer to:
 
 - We believe it is impossible to finish this job completely in 8 hours. Try to get a basic end-to-end prototype solution working. Do the best you can - your effort and approach are being tested.
 - The Learning Registry API is pretty bad in quality of service: you will experience unreliability errors most likely from the API. That's a known problem. We have intentionally included LR in this project for that reason.
-- If you run into trouble, ask us questions.
+- If you run into trouble, ask us questions by emailing your point of contact for the test. We can provide feedback on what is important to focus on, or whether a particular framework or library is allowed under the test, but we can't provide feedback or direction on work in process.
 
 ## Evaluation Criteria (in order of importance)
 
 0. Does the final result show that the instructions and guidelines above were followed?
 1. Is there an end-to-end architecture in place that clearly describes a solution that works?
-2. Does the code have tests?
+2. Does the code have tests? Do the tests cover the most critical functionality of the project?
 3. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
 4. Is the code efficient? Does it make inappropriate use of system resources, like consuming far too much ram?
 5. We assume the project will not be completed entirely. Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
-6. Does the project code follow a consistent style? 
+6. Does the project code follow a consistent style?
 7. Are the git commits small and with good comments?
 8. Is the code easy to install?
 
