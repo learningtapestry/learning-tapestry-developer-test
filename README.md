@@ -1,88 +1,56 @@
 # Learning Registry Developer Test
 
-This is a test project to assess a software developer's skills. This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru).
-
-## Tips for passing this test
-
-- Read this README carefully and come up with a plan to finish it as best as you can.
-- Use simple frameworks instead of complicated ones.
-- Ask us if you're unsure about something.
-- Don't submit your project without tests. You won't have time to test everything, so choose what to test.
-
-## References
-
-Refer to:
-- [Learning Registry](http://www.learningregistry.org). Don't spend too much time understanding LR. It's a big OSS project.
-- [LR extractor](https://github.com/learningtapestry/learning-registry-ruby-tools/tree/master/extractor). This is an example on how to extract data out of the LR. Don't copy code code from this code base.
+This is a test project to assess a software developer's skills.
 
 ## Requirements
 
-- You must use a minimal framework for the web aspect of the project. In other words, no kitcken-sink frameworks like Django or Rails, though individual components of those frameworks are OK.
-- You must write tests.
-- You must follow the instructions closely.
-- You must version your code with git.
+- Use .NET Core
+- Use an RDBMS
+- Use an ORM
+- Use git
+- Aside from the libraries referenced in the instructions, use whichever libraries
+  you prefer
 
-### Ruby specific notes
+## Test submission
 
-- Do not use Rails. Any other libraries are allowed (ORMs are okay).
-  - Note: The reason we ask you not to use Rails is because we want to see how you write software in this test. We use Rails regularly in our professional work, and expect you will use it here if you're a Ruby engineer. But in terms of seeing what kind of programmer you are, Rails tends to obscure certain skills that we would like to see you apply.
-- Write tests with minitest or RSpec.
+Submit the test using a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
 
 ## Instructions
 
-- [ ] 1) Pull the data from the [LR API](http://node01.public.learningregistry.net/) (3000 records are enough).
+In this project, you will create a backend API as well as a frontend client to the API.
 
-    - The code that does this is a part of your app as well and written in the same language. It should be configurable and repeatable, and it's a good idea to write tests for it.
+### Backend API
 
-- [ ] 2) Normalize the data as best you can into a relational structure and store the data into a PostgreSQL database.
+Implement the following endpoints:
 
-    - Bonus points for deserializing the `resource_data` field, which contains UTF-8 strings that have XML or JSON data.
+- [GET] `/resources?page={page}`: paginate records from the database and return
+them as JSON. Each record must be returned with all its associated information.
 
-- [ ] 3) Expose the data via an API.
+- [GET] `/resources/reports/domains`: show the total number of resources for
+each domain name in the database (use the `resource_locator` property to find
+the domain name).
 
-    - The API should have two methods:
-        - `/resources`: Resource browser with pagination
-        - `/resources_by_identity`: groups resources by identity. Allows an `?identity=` parameter that filters out identities by the values of the identity types. If the parameter is not present, aggregated values must be displayed anyway. We encourage you to use SQL as far as possible for this method.
+- [POST] `/resources/refresh`: pull data
+  from the [LR API](http://node01.public.learningregistry.net/) (3000 records
+  are enough). Parse the data and store it in the database. You can design the
+  database model however you prefer. Delete old data before storing the new records.
+  [Documentation for the LR API.](https://github.com/LearningRegistry/LearningRegistry/wiki/Consuming-Learning-Registry-Records#1--harvesting-records)
 
-          Example output:
-          ```
-          [{ "identity": "John Doe", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
-          ```
+### Frontend client
 
-- [ ] 4) Write a piece of code - an API client - that consumes your API and displays the returned data.
+The frontend client must be implemented using
+[create-react-app](https://github.com/facebook/create-react-app). Don't worry
+about making it look good.
 
-- [ ] 5) Write tests.
+- Show a list of records with basic information. Paginate the list.
+- Allow the user to click a record to see the value of its `resource_data`
+  property.
+- Show a "Refresh data" button that allows the user to trigger a refresh.
 
-- [ ] 6) Provide some basic documentation on how to use your project.
+### Tests
 
-- [ ] 7) Limit your effort to no more than 8 hours total.
+- Write a test for the `/resources` endpoint verifying that it's returning
+  records.
 
-- [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
-
-- [ ] 9) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
-
-### Ruby specific notes
-
-- You can use a Rake task to invoke 5).
-
-## Notes
-
-- We believe it is impossible to finish this job completely in 8 hours. Try to get a basic end-to-end prototype solution working. Do the best you can - your effort and approach are being tested.
-- The Learning Registry API is pretty bad in quality of service: you will experience unreliability errors most likely from the API. That's a known problem. We have intentionally included LR in this project for that reason.
-- If you run into trouble, ask us questions by emailing your point of contact for the test. We can provide feedback on what is important to focus on, or whether a particular framework or library is allowed under the test, but we can't provide feedback or direction on work in process.
-
-## Evaluation Criteria (in order of importance)
-
-0. Does the final result show that the instructions and guidelines above were followed?
-1. Is there an end-to-end architecture in place that clearly describes a solution that works?
-2. Does the code have tests? Do the tests cover the most critical functionality of the project?
-3. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
-4. Is the code efficient? Does it make inappropriate use of system resources, like consuming far too much ram?
-5. We assume the project will not be completed entirely. Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
-6. Does the project code follow a consistent style?
-7. Are the git commits small and with good comments?
-8. Is the code easy to install?
-
-### Ruby specific notes
-
-- We suggest following [bbatsov's style guide](https://github.com/bbatsov/ruby-style-guide)
+- Write a test for the `/resources/reports/domains` endpoint verifying that
+  it's aggregating records.
