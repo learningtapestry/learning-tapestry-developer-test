@@ -9,6 +9,7 @@ This is a test project to assess a software developer's skills. This test is a f
 - Ask us if you're unsure about something.
 - Don't submit your project without tests. You won't have time to test everything, so choose what to test.
 - It's better to accomplish only part of the project well, than to get partway done with everything.
+- Use all the time available to you - if you can implement more and specify/estimate less of the project, that will improve your score. But wrapping up your work on the project clearly/cleanly is paramount.
 
 ## References
 
