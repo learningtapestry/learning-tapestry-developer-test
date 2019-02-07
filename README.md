@@ -35,12 +35,12 @@ Refer to:
 
     - The code that does this is a part of your app as well and written in the same language. It should be configurable and repeatable, and it's a good idea to write tests for it.
 
-- [ ] 2) Normalize the data as best you can into a relational structure and store the data into a PostgreSQL database.
+- [ ] 2) Store the data as best you can into Postgres - it's fine to use json/b format
 
-    - You should decode and normalize (as much as you have time for) the `resource` field, which contains base64 strings, encoded using [JWT](https://jwt.io/), that have JSON data inside. (Note you may find a shortcut to decoding the resource field, which is fine to use.)
+    - You should decode the `resource` field into its own field. To decode this field, note it contains base64 strings, encoded using [JWT](https://jwt.io/), that have JSON data inside. (Note you may find a shortcut to decoding the resource field, which is fine to use.)
     - Bonus: Validate that the JWT `resource` field was encoded by the public key provided in the envelope.
 
-- [ ] 3) Expose the data via an API.
+- [ ] 3) Specify briefly how you would implement exposing the data above via APIs. Estimate the time required to complete the task.
 
     - The API should have two methods:
         - `/resources`: Resource browser with pagination
@@ -51,15 +51,15 @@ Refer to:
           [{ "ceterms:agentType": "Business", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
           ```
 
-- [ ] 4) Write a piece of code - an API client - that consumes your API and displays the returned data.
+- [ ] 4) Specify briefly and estimate writing a piece of code - an API client - that consumes your API and displays the returned data.
 
-- [ ] 5) Write tests.
+- [ ] 5) Write tests for all implemented components. Specify and estimate the amount of time required to complete tests for spec'ed components.
 
 - [ ] 6) Provide some basic documentation on how to use your project.
 
-- [ ] 7) Limit your effort to no more than 8 hours total.
+- [ ] 7) Limit your effort to no more than 4 hours total.
 
-- [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
+- [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete the remainder in total. Provide any feedback on the project itself: what went well, what was difficult, in what ways this test itself could be improved (you can also send PRs to this repo with suggestions - totally optional).
 
 - [ ] 9) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
 
@@ -69,20 +69,21 @@ Refer to:
 
 ## Notes
 
-- We believe it is impossible to finish this job completely in 8 hours. Try to get a basic end-to-end prototype solution working. Do the best you can - your effort and approach are being tested. We are also trying to understand how you wrap up a project temporarily before it is fully complete.
+- We believe it is impossible to finish this job completely in the time alloted. Try to get something basic operational. Do the best you can - your effort and approach are being tested. We are also trying to understand how you specify and estimate future work, as well as how you wrap up a project temporarily before it is fully complete.
 - If you run into trouble, ask us questions by emailing your point of contact for the test. We can provide feedback on what is important to focus on, or whether a particular framework or library is allowed under the test, but we can't provide feedback or direction on work in process.
 
 ## Evaluation Criteria (in order of importance)
 
 0. Does the final result show that the instructions and guidelines above were followed?
-1. Is there an end-to-end architecture in place that clearly describes a solution that works?
-2. Does the code have tests? Do the tests cover the most critical functionality of the project?
-3. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
-4. Is the code efficient? Does it make inappropriate use of system resources, like consuming far too much ram?
-5. We assume the project will not be completed entirely. Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
-6. Does the project code follow a consistent style?
-7. Are the git commits small and with good comments?
-8. Is the code easy to install?
+1. Is there an end-to-end architecture in place that clearly describes a solution that will work? (Nothing it won't be fully implemented)
+2. Are the specifications and time estimates clearly written and reasonably accurate?
+3. Does the code have tests? Do the tests cover the most critical functionality of the project?
+4. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
+5. Is the code efficient? Does it make inappropriate use of system resources, like consuming far too much ram?
+6. We assume the project will not be completed entirely. Does the final report give a good summary as to what work is remaining, how to solve it, and how much time it will take?
+7. Does the project code follow a consistent style?
+8. Are the git commits small and with good comments?
+9. Is the code easy to install?
 
 ### Ruby specific notes
 
