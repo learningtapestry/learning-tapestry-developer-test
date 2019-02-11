@@ -1,6 +1,6 @@
-# Credential Registry Developer Test
+# Learning Tapestry Four Hour Developer Test
 
-This is a test project to assess a software developer's skills. This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru). (Yes, some of us are dorks).
+This is a test project to assess a software developer's range of skills. All the tasks in this test may take more than the available time to complete - this is intentional: This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru). (Yes, some of us are dorks).
 
 ## Tips for passing this test
 
@@ -14,8 +14,7 @@ This is a test project to assess a software developer's skills. This test is a f
 ## References
 
 Refer to:
-- [Credential Registry](http://www.credreg.net). Don't spend too much time understanding CR. It's a big OSS project.
-  - Some quick start docs: [Basic walkthrough of using CR APIs](https://github.com/CredentialEngine/CredentialRegistry/blob/master/docs/02_ce-registry_walkthrough.md)
+- https://homework.adhoc.team/fetch/ (or here if page is down: https://web.archive.org/web20190211200527/http://homework.adhoc.team/fetch/)
 
 ## Requirements
 
@@ -32,45 +31,30 @@ Refer to:
 
 ## Instructions
 
-- [ ] 1) Pull the data from the [Staging CR API](https://staging.credentialengineregistry.org/envelopes).
+- [ ] 1) Follow the instructions for the FETCH project, however you should build the solution in the programming language you mutually agreed to, with the hiring manager here. The FETCH project refers to this project as a front-end app: for this test, consider this a backend API task.
 
-    - The code that does this is a part of your app as well and written in the same language. It should be configurable and repeatable, and it's a good idea to write tests for it.
+  - Note that FETCH also refers to Javascript specifically, which you should ignore (though not the JSON!). In the "Additional Requirements" section, you can ignore all the library requirements and restrictions. 
+  - Note also that the download file for this project is not working - so you have to stub out all the APIs and resources for this project in some way on your own.
 
-- [ ] 2) Store the data as best you can into Postgres - it's fine to use json/b format
+- [ ] 2) Store the data as best you can into Postgres - it's fine to use json/b format where appropriate, but normalized data structures are generally preferred.
 
-    - You should decode the `resource` field into its own field. To decode this field, note it contains base64 strings, encoded using [JWT](https://jwt.io/), that have JSON data inside. (Note you may find a shortcut to decoding the resource field, which is fine to use.)
-    - Bonus: Validate that the JWT `resource` field was encoded by the public key provided in the envelope.
+- [ ] 3) Write tests for all implemented components. Specify and estimate the amount of time required to complete test coverage .
 
-- [ ] 3) Specify briefly how you would implement exposing the data above via APIs. Estimate the time required to complete the task.
+- [ ] 4) Provide some basic documentation on how to use your project, including but not limited to installing the project and running the tests.
 
-    - The API should have two methods:
-        - `/resources`: Resource browser with pagination
-        - `/resources_by_field`: groups resources by field names. Allows an `?[field_name]=` parameters that filter out records by the values of certain field names contained within the resource field (which you decoded and normalized in the step above). If the parameter is not present, aggregated values must be displayed anyway (e.g. use a default aggregation). We encourage you to use SQL as far as possible for this method.
+- [ ] 5) Limit your effort to no more than 4 hours total.
 
-          Example output:
-          ```
-          [{ "ceterms:agentType": "Business", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
-          ```
+- [ ] 6) Create a final report of what you were unable to accomplish, and how long you think it will take to complete the remainder in total. Provide any feedback on the project itself: what went well, what was difficult, in what ways this test itself could be improved (you can also send PRs to this repo with suggestions - totally optional).
 
-- [ ] 4) Specify briefly and estimate writing a piece of code - an API client - that consumes your API and displays the returned data.
-
-- [ ] 5) Write tests for all implemented components. Specify and estimate the amount of time required to complete tests for spec'ed components.
-
-- [ ] 6) Provide some basic documentation on how to use your project.
-
-- [ ] 7) Limit your effort to no more than 4 hours total.
-
-- [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete the remainder in total. Provide any feedback on the project itself: what went well, what was difficult, in what ways this test itself could be improved (you can also send PRs to this repo with suggestions - totally optional).
-
-- [ ] 9) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
+- [ ] 7) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
 
 ### Ruby specific notes
 
-- You can use a Rake task to invoke 5).
+- You can use a Rake task to invoke 3).
 
 ## Notes
 
-- We believe it is impossible to finish this job completely in the time alloted. Try to get something basic operational. Do the best you can - your effort and approach are being tested. We are also trying to understand how you specify and estimate future work, as well as how you wrap up a project temporarily before it is fully complete.
+- We believe it isn't possible to thoroughly finish this job completely in the time alloted. Try to get something basic operational. Do the best you can - your effort and approach are being tested. We are also trying to understand how you specify and estimate future work, as well as how you wrap up a project temporarily before it is fully complete.
 - If you run into trouble, ask us questions by emailing your point of contact for the test. We can provide feedback on what is important to focus on, or whether a particular framework or library is allowed under the test, but we can't provide feedback or direction on work in process.
 
 ## Evaluation Criteria (in order of importance)
