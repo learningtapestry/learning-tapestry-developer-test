@@ -60,7 +60,7 @@ Refer to:
 ## Evaluation Criteria (in order of importance)
 
 0. Does the final result show that the instructions and guidelines above were followed?
-1. Is there an end-to-end architecture in place that clearly describes a solution that will work? (Nothing it won't be fully implemented)
+1. Is there an end-to-end architecture in place that clearly describes a solution that will work? (Noting it won't be fully implemented)
 2. Are the specifications and time estimates clearly written and reasonably accurate?
 3. Does the code have tests? Do the tests cover the most critical functionality of the project?
 4. Is the code cleanly implemented and using adequate software patterns? Is the overall project well-organized and orderly?
