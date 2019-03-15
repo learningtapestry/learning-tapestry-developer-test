@@ -1,4 +1,4 @@
-# Credential Registry Developer Test
+# Learning Registry Developer Test
 
 This is a test project to assess a software developer's skills. This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru). (Yes, some of us are dorks).
 
