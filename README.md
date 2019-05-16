@@ -46,7 +46,7 @@ Refer to:
 
 - [ ] 6) Create a final report of what you were unable to accomplish, and how long you think it will take to complete the remainder in total. Provide any feedback on the project itself: what went well, what was difficult, in what ways this test itself could be improved (you can also send PRs to this repo with suggestions - totally optional).
 
-- [ ] 7) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
+- [ ] 7) Send us your repo in a [git bundle](https://git-scm.com/docs/git-bundle).
 
 ### Ruby specific notes
 
