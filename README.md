@@ -11,7 +11,7 @@ Refer to: [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
 
 ## Requirements
 
-- Read and follow all the [detailed requirements for this project](https://github.com/learningtapestry/learning-tapestry-developer-test/blob/front-end/detailed-requirements.md#detailed-requirements)
+Read and follow all the [detailed requirements for this project](https://github.com/learningtapestry/learning-tapestry-developer-test/blob/front-end/detailed-requirements.md#detailed-requirements)
 
 ## Notes
 
