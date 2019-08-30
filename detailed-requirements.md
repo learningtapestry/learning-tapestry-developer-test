@@ -12,7 +12,9 @@
 - You must write meaningful tests.
 - You must follow the instructions on this page closely.
 - You must version your code with git.
-- All of your interfaces should use CSS for layout and style. You can use any CSS compiler, unless you are asked to use a specific one. You can use any CSS page layout framework (you should use one), unless you asked to use a specific one.    
+- All of your interfaces should use CSS for layout and style. 
+  - You can use any CSS compiler, unless you are asked to use a specific one. 
+  - You must use a CSS page layout framework (aka boilerplate), and you can choose one you like, unless you were asked to use a specific one.    
 - Bonus credit for using TypeScript instead of Javascript
 - Your pages should be stand-alone HTML, meaning they can just be loaded into a browser locally and they will work. It's fine to use a compiler but your final work product should be stand-alone.
 - Your user interface can be simple, but it should be functional and nice to look at. You aren't being tested on your graphic art skills or your UX design skills, but you are being tested on your ability to make simple, nice looking interfaces based on api data.
