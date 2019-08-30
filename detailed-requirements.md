@@ -19,3 +19,7 @@
 - Limit your effort to no more than 8 hours total.
 - Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
 - Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
+
+## Notes
+- We believe it is impossible to finish this job completely in 8 hours. Try to get a basic end-to-end prototype solution working. Do the best you can - your effort and approach are being tested. We are also trying to understand how you wrap up a project temporarily before it is fully complete.
+- If you run into trouble, ask us questions by emailing your point of contact for the test. We can provide feedback on what is important to focus on, or whether a particular framework or library is allowed under the test, but we can't provide feedback or direction on work in process.
