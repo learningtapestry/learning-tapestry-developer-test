@@ -24,6 +24,7 @@ Additional [notes and information here](https://github.com/learningtapestry/lear
      - The index page should paginate data 
      - Bonus: pagination parameters are user configurable
      - Bonus: Data sort or filtering options are provided in the interface.
+     - Bonus: Display additional data (from each main article page) for each row, loading the data asynchronously 
   - A detail page that displays a specific article
      - The detail page should use API data and not just show an iframe to Wikipedia
 - Use whichever state-handling techniques you prefer
