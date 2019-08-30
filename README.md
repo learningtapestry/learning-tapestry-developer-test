@@ -23,31 +23,25 @@ Refer to: [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
 - All of your interfaces should use CSS for layout and style. You can use any CSS compiler, unless you are asked to use a specific one. You can use any CSS page layout framework (you should use one), unless you asked to use a specific one.    
 - Your pages should be stand-alone HTML, meaning they can just be loaded into a browser locally and they will work. It's fine to use a compiler but your final work product should be stand-alone.
 - Your user interface can be simple, but it should be functional and nice to look at. You aren't being tested on your graphic art skills or your UX design skills, but you are being tested on your ability to make simple, nice looking interfaces based on api data.
+- Provide some basic documentation on how to use your project.
+- Limit your effort to no more than 8 hours total.
+- Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
+- Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
 
 ## Instructions
 
 - [ ] 1) Pull the data from the [Wikipedia Recent Changes API](https://en.wikipedia.org/w/api.php?action=query&list=recentchanges&format=json&rcstart=2019-08-29T10:59:20Z&rcnamespace=0&rcshow=!minor%7C!bot%7C!anon%7C!redirect&rclimit=500&rcdir=newer).
 
-    - Use rcstart to fix the results so that reloading the page will only update to show results by hour. So if the browser time is 10:59:59, the system will only show data for 10:00 and earlier, and at 11:00:00, it will show data for 11:00:00 and earlier.
+    - Bonus: Use rcstart to fix the results so that reloading the page will only update to show results by hour. So if the browser time is 10:59:59, the system will only show data for 10:00 and earlier, and at 11:00:00, it will show data for 11:00:00 and earlier.
 
-- [ ] 2) Manage the data returned using whatever data structures or methods necessary. Expose the data to your front-end framework in a simple way allows automatic updates when the data are changed (i.e. new API calls are made).
-
-- [ ] 3) Build a user-interface to present this data. Paginate the data to 20 rows. 
+- [ ] 2) Build a user-interface to present this data. Paginate the data to 20 rows. 
     - Bonus: pagination size is user configurable. 
     - Bonus: Data sort or filtering options are provided in the interface.
     - Bonus: User interface element allows user to load all recent changes (ignoring rcstart limit above)
 
-- [ ] 4) Build a second user-interface (could be part of above screen as a single page application) that allows the user to click on each article and display the more detailed Wikipedia article page. This page should be built using the Wikipedia API+json and not just (for example) an i-frame to the Wikipedia article page. 
+- [ ] 3) (Only if you have time but do this before the bonus tasks above) Build a second user-interface (could be part of above screen as a single page application) that allows the user to click on each article and display the more detailed Wikipedia article page. This page should be built using the Wikipedia API+json and not just (for example) an i-frame to the Wikipedia article page. 
 
-- [ ] 5) Write tests for as many aspects of the functionality as you have time for, and are needed. Prioritize integration tests that show the system is working correctly overall (but functional and unit level tests are welcome).
-
-- [ ] 6) Provide some basic documentation on how to use your project.
-
-- [ ] 7) Limit your effort to no more than 8 hours total.
-
-- [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
-
-- [ ] 9) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
+- [ ] 4) Write tests for as many aspects of the functionality as you have time for, and are needed. Prioritize integration tests that show the system is working correctly overall (but functional and unit level tests are welcome).
 
 ## Notes
 
