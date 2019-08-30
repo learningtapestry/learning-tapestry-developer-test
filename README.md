@@ -1,4 +1,4 @@
-# Learning Tapestry Server-side Developer Test
+# Learning Tapestry Front-end Developer Test
 
 This is a test project to assess a software developer's skills. This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru). (Yes, some of us are dorks).
 
@@ -12,48 +12,34 @@ This is a test project to assess a software developer's skills. This test is a f
 
 ## References
 
-Refer to:
-- [Credential Registry](http://www.credreg.net). Don't spend too much time understanding CR. It's a big OSS project.
-  - Some quick start docs: [Basic walkthrough of using CR APIs](https://github.com/CredentialEngine/CredentialRegistry/blob/master/docs/02_ce-registry_walkthrough.md)
+Refer to: [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
 
 ## Requirements
 
-- You must use a minimal framework for the web aspect of the project. In other words, no kitcken-sink frameworks like Django or Rails, though individual components of those frameworks are OK.
+- You must use the framework agreed upon between you and the hiring manager, for the web aspect of the project. You can add additional libraries and tools where needed, but it would be unreasonable (for example) to add Angular to a React framework project.
 - You must write meaningful tests.
 - You must follow the instructions on this page closely.
 - You must version your code with git.
-
-### Ruby specific notes
-
-- Do not use Rails. Any other libraries are allowed (ORMs are okay).
-  - Note: The reason we ask you not to use Rails is because we want to see how you write software in this test. We use Rails regularly in our professional work, and expect you will use it here if you're a Ruby engineer. But in terms of seeing what kind of programmer you are, Rails tends to obscure certain skills that we would like to see you apply.
-- Write tests with minitest or RSpec.
+- All of your interfaces should use CSS for layout and style. You can use any CSS compiler, unless you are asked to use a specific one. You can use any CSS page layout framework (you should use one), unless you asked to use a specific one.    
+- Your pages should be stand-alone HTML, meaning they can just be loaded into a browser locally and they will work. It's fine to use a compiler but your final work product should be stand-alone.
+- Your user interface can be simple, but it should be functional and nice to look at. You aren't being tested on your graphic art skills or your UX design skills, but you are being tested on your ability to make simple, nice looking interfaces based on api data.
 
 ## Instructions
 
-- [ ] 1) Pull the data from the [Staging CR API](https://staging.credentialengineregistry.org/envelopes).
+- [ ] 1) Pull the data from the [Wikipedia Recent Changes API](https://en.wikipedia.org/w/api.php?action=query&list=recentchanges&format=json&rcstart=2019-08-29T10:59:20Z&rcnamespace=0&rcshow=!minor%7C!bot%7C!anon%7C!redirect&rclimit=500&rcdir=newer).
 
-    - The code that does this is a part of your app as well and written in the same language. It should be configurable and repeatable, and it's a good idea to write tests for it.
+    - Use rcstart to fix the results so that reloading the page will only update to show results by hour. So if the browser time is 10:59:59, the system will only show data for 10:00 and earlier, and at 11:00:00, it will show data for 11:00:00 and earlier.
 
-- [ ] 2) Normalize the data as best you can into a relational structure and store the data into a PostgreSQL database.
+- [ ] 2) Manage the data returned using whatever data structures or methods necessary. Expose the data to your front-end framework in a simple way allows automatic updates when the data are changed (i.e. new API calls are made).
 
-    - You should decode and normalize (as much as you have time for) the `resource` field, which contains base64 strings, encoded using [JWT](https://jwt.io/), that have JSON data inside. (Note you may find a shortcut to decoding the resource field, which is fine to use.)
-    - Bonus: Validate that the JWT `resource` field was encoded by the public key provided in the envelope.
+- [ ] 3) Build a user-interface to present this data. Paginate the data to 20 rows. 
+    - Bonus: pagination size is user configurable. 
+    - Bonus: Data sort or filtering options are provided in the interface.
+    - Bonus: User interface element allows user to load all recent changes (ignoring rcstart limit above)
 
-- [ ] 3) Expose the data via an API.
+- [ ] 4) Build a second user-interface (could be part of above screen as a single page application) that allows the user to click on each article and display the more detailed Wikipedia article page. This page should be built using the Wikipedia API+json and not just (for example) an i-frame to the Wikipedia article page. 
 
-    - The API should have two methods:
-        - `/resources`: Resource browser with pagination
-        - `/resources_by_field`: groups resources by field names. Allows an `?[field_name]=` parameters that filter out records by the values of certain field names contained within the resource field (which you decoded and normalized in the step above). If the parameter is not present, aggregated values must be displayed anyway (e.g. use a default aggregation). We encourage you to use SQL as far as possible for this method.
-
-          Example output:
-          ```
-          [{ "ceterms:agentType": "Business", "results": [ { /*... resource JSON ...*/ }, ...] }, ...]
-          ```
-
-- [ ] 4) Write a piece of code - an API client - that consumes your API and displays the returned data.
-
-- [ ] 5) Write tests.
+- [ ] 5) Write tests for as many aspects of the functionality as you have time for, and are needed. Prioritize integration tests that show the system is working correctly overall (but functional and unit level tests are welcome).
 
 - [ ] 6) Provide some basic documentation on how to use your project.
 
@@ -62,10 +48,6 @@ Refer to:
 - [ ] 8) Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
 
 - [ ] 9) Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
-
-### Ruby specific notes
-
-- You can use a Rake task to invoke 5).
 
 ## Notes
 
@@ -83,7 +65,3 @@ Refer to:
 6. Does the project code follow a consistent style?
 7. Are the git commits small and with good comments?
 8. Is the code easy to install?
-
-### Ruby specific notes
-
-- We suggest following [bbatsov's style guide](https://github.com/bbatsov/ruby-style-guide)
