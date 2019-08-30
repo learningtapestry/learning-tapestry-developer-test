@@ -3,12 +3,7 @@
 This is a test project to assess a software developer's skills. This test is a form of [Kobayashi Maru scenario](https://en.wikipedia.org/wiki/Kobayashi_Maru). (Yes, some of us are dorks).
 
 ## Tips for passing this test
-
-- Read this README carefully and come up with a plan to finish it as best as you can.
-- Use simple frameworks instead of complicated ones.
-- Ask us if you're unsure about something.
-- Don't submit your project without tests. You won't have time to test everything, so choose what to test.
-- It's better to accomplish only part of the project well, than to get partway done with everything.
+Refer to [this list](https://github.com/learningtapestry/learning-tapestry-developer-test/blob/front-end/detailed-requirements.md#tips-for-passing-this-test) for advice on doing well on this test.
 
 ## References
 
@@ -16,17 +11,7 @@ Refer to: [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
 
 ## Requirements
 
-- You must use the framework agreed upon between you and the hiring manager, for the web aspect of the project. You can add additional libraries and tools where needed, but it would be unreasonable (for example) to add Angular to a React framework project.
-- You must write meaningful tests.
-- You must follow the instructions on this page closely.
-- You must version your code with git.
-- All of your interfaces should use CSS for layout and style. You can use any CSS compiler, unless you are asked to use a specific one. You can use any CSS page layout framework (you should use one), unless you asked to use a specific one.    
-- Your pages should be stand-alone HTML, meaning they can just be loaded into a browser locally and they will work. It's fine to use a compiler but your final work product should be stand-alone.
-- Your user interface can be simple, but it should be functional and nice to look at. You aren't being tested on your graphic art skills or your UX design skills, but you are being tested on your ability to make simple, nice looking interfaces based on api data.
-- Provide some basic documentation on how to use your project.
-- Limit your effort to no more than 8 hours total.
-- Create a final report of what you were unable to accomplish, and how long you think it will take to complete.
-- Send us your repo in a [git bundle](https://git-scm.com/blog/2010/03/10/bundles.html).
+- Read and follow all the [detailed requirements for this project(https://github.com/learningtapestry/learning-tapestry-developer-test/blob/front-end/detailed-requirements.md#detailed-requirements)
 
 ## Instructions
 
@@ -39,7 +24,9 @@ Refer to: [Wikipedia API](https://www.mediawiki.org/wiki/API:Main_page)
     - Bonus: Data sort or filtering options are provided in the interface.
     - Bonus: User interface element allows user to load all recent changes (ignoring rcstart limit above)
 
-- [ ] 3) (Only if you have time but do this before the bonus tasks above) Build a second user-interface (could be part of above screen as a single page application) that allows the user to click on each article and display the more detailed Wikipedia article page. This page should be built using the Wikipedia API+json and not just (for example) an i-frame to the Wikipedia article page. 
+- [ ] 3) Build a second user-interface that allows the user to click on each article and display the more detailed Wikipedia article page. This page should be built using the Wikipedia API+json and not just (for example) an i-frame to the Wikipedia article page. 
+    - Only do this item if you have time. But do this item before the bonus tasks above.
+    - This interface page could be part of above screen in #2 as part of a single page application approach. 
 
 - [ ] 4) Write tests for as many aspects of the functionality as you have time for, and are needed. Prioritize integration tests that show the system is working correctly overall (but functional and unit level tests are welcome).
 
