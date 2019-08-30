@@ -1,3 +1,11 @@
+## Tips for passing this test
+
+- Read this README carefully and come up with a plan to finish it as best as you can.
+- Use simple frameworks instead of complicated ones.
+- Ask us if you're unsure about something.
+- Don't submit your project without tests. You won't have time to test everything, so choose what to test.
+- It's better to accomplish only part of the project well, than to get partway done with everything.
+
 ## Detailed Requirements
 
 - You must use the framework agreed upon between you and the hiring manager, for the web aspect of the project. You can add additional libraries and tools where needed, but it would be unreasonable (for example) to add Angular to a React framework project.
